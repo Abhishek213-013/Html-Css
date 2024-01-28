@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Worm - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            border-radius: 40px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightNav {
+            width: 30%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+
+        .firstsection {
+            background-color: green;
+            height: 400px;
+        }
+
+        .secondsection {
+            background-color: blue;
+            height: 400px;
+        }
+
+        .thirdsection {
+            background-color: burlywood;
+            height: 400px;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .firstHalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondHalf {
+            width: 100%;
+        }
+
+        .thirdHalf {
+            width: 100%;
+        }
+
+        .thirdHalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .text-big {
+            font-family: serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .text-small {
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        /* Sign In/Sign Up Styles */
+        section {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Combined Navigation and Sign In/Sign Up Styles */
+        .signin-signup-container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <li><a href="#scienceFiction">Science Fiction</a></li>
+            <li><a href="#detectiveFiction">Detective Fiction</a></li>
+            <li><a href="#fantasyFiction">Fantasy Fiction</a></li>
+        </ul>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+            <a href="signin.html" class="btn btn-sm">Sign In</a>
+            <a href="signup.html" class="btn btn-sm">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="scienceFiction">
+                    Science Fiction
+                </h1>
+
+                <p class="text-small">
+                    Science fiction is a genre of fiction in which the stories often 
+                    tell about science and technology of the future. It is important 
+                    to note that science fiction has a relationship with the principles
+                    of science—these stories involve partially true- partially fictitious
+                    laws or theories of science.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="detectiveFiction">
+                    Detective Fiction
+                </h1>
+                <p class="text-small">
+                    Detective fiction is a fictional narrative featuring a professional or
+                    amateur sleuth who solves a crime or mystery and typically reveals the
+                    culprit at the end. Detective fiction is often blended with other genres
+                    such as supernatural, fantasy, romance, and historical fiction, among others.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="thirdsection">
+        <div class="box-main">
+            <div class="thirdHalf">
+                <h1 class="text-big" id="fantasyFiction">
+                    Fantasy Fiction
+                </h1>
+                <p class="text-small">
+                    Fantasy literature is literature set in an imaginary universe, often but 
+                    not always without any locations, events, or people from the real world. 
+                    Magic, the supernatural and magical creatures are common in many of these 
+                    imaginary worlds. Fantasy literature may be directed at both children and adults
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="thumbnail">
+        <img src="img.jpg" alt="book image">
+    </div>
+
+    
+
+       
+
+    <!-- Footer Section -->
+    <footer class="background">
+        <p class="text-footer">
+            Copyright © - All rights are reserved
+        </p>
+    </footer>
+
+</body>
+</html>
