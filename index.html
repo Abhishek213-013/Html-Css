@@ -56,7 +56,52 @@
                     <li>Reading</li>
                 </ul>
             </div>
+             <div class="ShareButton">
+                <h2>Share this CV</h2>
+                <div class="socialButtons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://abhishek213-013.github.io/Html-Css/" target="_blank">
+                        <img src="fbLogo.png"
+                        alt="Facebook Share">
+                        </a>
 
+                        <a href="https://www.linkedin.com/shareArticle?url=https://abhishek213-013.github.io/Html-Css/" target="_blank">
+                            <img src="linkedinLogo.png"
+                            alt="Linkedin Share">
+                            </a>
+                </div>
+
+                <button id="ShareButton">Share</button>
+                <div id="sharePopup" style="display: none;">
+                    <button id="facebookShare">Facebook</button>
+                    <button id="linkedInShare">LinkedIn</button>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                      $("#shareButton").click(function () {
+                        $("#sharePopup").toggle();
+                      });
+
+                      $(document).click(function (e) {
+                        if (!$(e.target).closest("#shareButton, #sharePopup").length) {
+                          $("#sharePopup").hide();
+                        }
+                      });
+
+                      $("#sharePopup").click(function (e) {
+                        e.stopPropagation();
+                      });
+
+                      $("#facebookShare").click(function () {
+                        alert("Sharing on Facebook!");
+                      });
+                  
+                      $("#linkedInShare").click(function () {
+                        alert("Sharing on LinkedIn!");
+                      });
+                  
+                    });
+                  </script>
             
         </div>
         <div class="right">
