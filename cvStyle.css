@@ -41,3 +41,14 @@ body {
 .h2 {
     background-color: rgb(4, 96, 150);
 }
+
+
+.socialButtons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socialButtons img {
+    width: 30px;
+    height: 30px;
+}
