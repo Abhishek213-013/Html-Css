@@ -69,39 +69,6 @@
                             alt="Linkedin Share">
                             </a>
                 </div>
-
-                <button id="ShareButton">Share</button>
-                <div id="sharePopup" style="display: none;">
-                    <button id="facebookShare">Facebook</button>
-                    <button id="linkedInShare">LinkedIn</button>
-                </div>
-
-                <script>
-                    $(document).ready(function () {
-                      $("#shareButton").click(function () {
-                        $("#sharePopup").toggle();
-                      });
-
-                      $(document).click(function (e) {
-                        if (!$(e.target).closest("#shareButton, #sharePopup").length) {
-                          $("#sharePopup").hide();
-                        }
-                      });
-
-                      $("#sharePopup").click(function (e) {
-                        e.stopPropagation();
-                      });
-
-                      $("#facebookShare").click(function () {
-                        alert("Sharing on Facebook!");
-                      });
-                  
-                      $("#linkedInShare").click(function () {
-                        alert("Sharing on LinkedIn!");
-                      });
-                  
-                    });
-                  </script>
             
         </div>
         <div class="right">
